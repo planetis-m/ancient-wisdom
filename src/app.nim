@@ -1,5 +1,5 @@
 include karax / prelude
-import karax / [jjson, kajax, vstyles], std / [dom, random]
+import karax / [jjson, kajax], std / [dom, random]
 
 type
   Quote = ref object
@@ -9,13 +9,13 @@ template `^`(s: string): cstring = cstring(s)
 
 let quotes = @[
   Quote(text: "One thing i know, that i know nothing. This is the source of my wisdom.", author: "Socrates"),
-  Quote(text: "Love is composed of a single soul inhabiting two bodies.", author: "Socrates"),
-  Quote(text: "There is nothing permanent except change.", author: "Socrates"),
-  Quote(text: "I am indebted to my father for living, but to my teacher for living well.", author: "Plutarch"),
-  Quote(text: "He who steals a little steals with the same wish as he who steals much, but with less power.", author: "Epicurus"),
-  Quote(text: "Let no man be called happy before his death. Till then, he is not happy, only lucky.", author: "Xenophon"),
-  Quote(text: "By all means, get married: if you find a good wife, you'll be happy; if not, you'll become a philosopher.", author: "Demosthenes"),
-  Quote(text: "Small opportunities are often the beginning of great enterprises.", author: "Pericles")
+  Quote(text: "Love is composed of a single soul inhabiting two bodies.", author: "Aristotle"),
+  Quote(text: "There is nothing permanent except change.", author: "Heraclitus"),
+  Quote(text: "I am indebted to my father for living, but to my teacher for living well.", author: "Alexander the Great"),
+  Quote(text: "He who steals a little steals with the same wish as he who steals much, but with less power.", author: "Plato"),
+  Quote(text: "Let no man be called happy before his death. Till then, he is not happy, only lucky.", author: "Solon"),
+  Quote(text: "By all means, get married: if you find a good wife, you'll be happy; if not, you'll become a philosopher.", author: "Socrates"),
+  Quote(text: "Small opportunities are often the beginning of great enterprises.", author: "Demosthenes")
 ]
 
 var
