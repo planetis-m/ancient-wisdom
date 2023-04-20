@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.card{
+  @apply bg-white rounded-lg overflow-hidden shadow-xl;
+}
+.btn{
+  @apply rounded-lg text-white bg-primary hover:bg-highlight focus:outline-none focus:ring-0 py-2 px-4 font-semibold text-base cursor-pointer shadow-lg;
+}
