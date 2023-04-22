@@ -24,7 +24,7 @@ var
 proc createDom(): VNode =
   result = buildHtml:
     tdiv(class = "flex flex-col items-center justify-center min-h-screen p-10 bg-blurred bg-center bg-cover"):
-      h1(class = "font-light md:text-3xl md:text-4xl text-gray-600 mb-8 md:mb-12"):
+      h1(class = "font-light text-3xl md:text-4xl text-gray-600 mb-8 md:mb-12"):
         text ^"Ancient Wisdom"
       tdiv(class = "relative w-full md:w-3/4 lg:w-1/2"):
         tdiv(class = "flex card"):
