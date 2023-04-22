@@ -24,11 +24,11 @@ var
 proc createDom(): VNode =
   result = buildHtml:
     tdiv(class = "flex flex-col items-center justify-center min-h-screen p-10 bg-blurred bg-center bg-cover"):
-      h1(class = "font-light text-2xl md:text-4xl text-gray-600 mb-8 md:mb-12"):
+      h1(class = "font-light text-4xl text-gray-600 mb-8 md:mb-12"):
         text ^"Ancient Wisdom"
       tdiv(class = "relative w-full md:w-3/4 lg:w-1/2"):
         tdiv(class = "flex card"):
-          img(src = "img/portrait.jpg", width = "512", class = "object-cover h-auto w-1/2", alt = "", height = "512")
+          img(src = "img/portrait.jpg", width = "512", height = "512", class = "object-cover h-auto w-1/2", alt = "")
           tdiv(class = "p-4 w-1/2"):
             span(class = "font-semibold italic text-base text-gray-600"):
               text ^"“" & current.text & ^"”"
