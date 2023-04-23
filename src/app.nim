@@ -35,7 +35,7 @@ proc createDom(): VNode =
             span(class = "block text-lg font-light text-gray-400"):
               text ^"— " & current.author
         tdiv(class = "flex justify-center mt-4 md:mt-8 md:absolute md:right-0"):
-          button(class = "btn"):
+          button(class = "btn btn-primary"):
             var laziness = false
             proc onClick() =
               if not laziness:
