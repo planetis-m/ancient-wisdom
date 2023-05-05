@@ -18,8 +18,8 @@ let quotes = @[
   Quote(text: "Small opportunities are often the beginning of great enterprises.", author: "Demosthenes")
 ]
 
-var
-  current = quotes.sample()
+randomize()
+var current = sample(quotes)
 
 proc createDom(): VNode =
   result = buildHtml:
@@ -40,7 +40,7 @@ proc createDom(): VNode =
             proc onClick() =
               if not laziness:
                 laziness = true
-                current = quotes.sample()
+                current = sample(quotes)
                 discard setTimeout(proc () = laziness = false, 500)
             text ^"New quote"
 
