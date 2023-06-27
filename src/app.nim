@@ -1,5 +1,5 @@
 include karax / prelude
-import karax / [jjson, kajax], std / [dom, random]
+import std / [dom, random]
 
 type
   Quote = ref object
